@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="paddle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="350" fill="url(#bg)"/>
+
+  <!-- Subtle Grid -->
+  <path d="M 0 50 L 600 50 M 0 100 L 600 100 M 0 150 L 600 150 M 0 200 L 600 200 M 0 250 L 600 250 M 0 300 L 600 300" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+  <path d="M 100 0 L 100 350 M 200 0 L 200 350 M 300 0 L 300 350 M 400 0 L 400 350 M 500 0 L 500 350" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Bricks Row 1 (Red) -->
+  <rect x="50" y="40" width="55" height="18" rx="3" fill="#f43f5e" filter="url(#glow)"/>
+  <rect x="115" y="40" width="55" height="18" rx="3" fill="#f43f5e" filter="url(#glow)"/>
+  <rect x="180" y="40" width="55" height="18" rx="3" fill="#f43f5e" filter="url(#glow)"/>
+  <rect x="245" y="40" width="55" height="18" rx="3" fill="#f43f5e" filter="url(#glow)"/>
+  <rect x="310" y="40" width="55" height="18" rx="3" fill="#f43f5e" filter="url(#glow)"/>
+  <rect x="375" y="40" width="55" height="18" rx="3" fill="#f43f5e" opacity="0.3"/>
+  <rect x="440" y="40" width="55" height="18" rx="3" fill="#f43f5e" filter="url(#glow)"/>
+  <rect x="505" y="40" width="55" height="18" rx="3" fill="#f43f5e" filter="url(#glow)"/>
+
+  <!-- Bricks Row 2 (Orange) -->
+  <rect x="50" y="66" width="55" height="18" rx="3" fill="#fb923c"/>
+  <rect x="115" y="66" width="55" height="18" rx="3" fill="#fb923c"/>
+  <rect x="180" y="66" width="55" height="18" rx="3" fill="#fb923c"/>
+  <rect x="310" y="66" width="55" height="18" rx="3" fill="#fb923c"/>
+  <rect x="375" y="66" width="55" height="18" rx="3" fill="#fb923c"/>
+  <rect x="440" y="66" width="55" height="18" rx="3" fill="#fb923c"/>
+  <rect x="505" y="66" width="55" height="18" rx="3" fill="#fb923c"/>
+
+  <!-- Bricks Row 3 (Yellow) -->
+  <rect x="50" y="92" width="55" height="18" rx="3" fill="#eab308"/>
+  <rect x="115" y="92" width="55" height="18" rx="3" fill="#eab308"/>
+  <rect x="245" y="92" width="55" height="18" rx="3" fill="#eab308"/>
+  <rect x="310" y="92" width="55" height="18" rx="3" fill="#eab308"/>
+  <rect x="440" y="92" width="55" height="18" rx="3" fill="#eab308"/>
+  <rect x="505" y="92" width="55" height="18" rx="3" fill="#eab308"/>
+
+  <!-- Bricks Row 4 (Emerald) -->
+  <rect x="50" y="118" width="55" height="18" rx="3" fill="#10b981"/>
+  <rect x="180" y="118" width="55" height="18" rx="3" fill="#10b981"/>
+  <rect x="375" y="118" width="55" height="18" rx="3" fill="#10b981"/>
+  <rect x="505" y="118" width="55" height="18" rx="3" fill="#10b981"/>
+
+  <!-- Bricks Row 5 (Cyan) -->
+  <rect x="115" y="144" width="55" height="18" rx="3" fill="#06b6d4"/>
+  <rect x="245" y="144" width="55" height="18" rx="3" fill="#06b6d4"/>
+  <rect x="440" y="144" width="55" height="18" rx="3" fill="#06b6d4"/>
+
+  <!-- Ball Trails -->
+  <circle cx="280" cy="225" r="5" fill="#38bdf8" opacity="0.2"/>
+  <circle cx="290" cy="210" r="6" fill="#38bdf8" opacity="0.4"/>
+  <circle cx="300" cy="195" r="7" fill="#38bdf8" opacity="0.7"/>
+
+  <!-- Ball -->
+  <circle cx="310" cy="180" r="8" fill="#ffffff" filter="url(#glow)"/>
+
+  <!-- Sparks / Particles -->
+  <circle cx="315" cy="172" r="2.5" fill="#eab308"/>
+  <circle cx="325" cy="175" r="3" fill="#f43f5e"/>
+  <circle cx="305" cy="168" r="2" fill="#38bdf8"/>
+  <circle cx="318" cy="162" r="2" fill="#ffffff"/>
+
+  <!-- Item Pill -->
+  <rect x="360" y="220" width="28" height="12" rx="6" fill="#10b981" filter="url(#glow)"/>
+  <text x="374" y="229" font-family="sans-serif" font-weight="bold" font-size="8" fill="#ffffff" text-anchor="middle">+3</text>
+
+  <!-- Paddle -->
+  <rect x="220" y="305" width="130" height="14" rx="7" fill="url(#paddle)" filter="url(#glow)"/>
+  <rect x="283" y="308" width="4" height="8" rx="2" fill="#ffffff" opacity="0.8"/>
+</svg>

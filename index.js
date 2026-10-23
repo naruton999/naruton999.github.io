@@ -1,0 +1,1 @@
+document.addEventListener("alpine:init",()=>{Alpine.data("gameLab",()=>({searchQuery:"",selectedCategory:"all",isGameVisible(e,t){const a="all"===this.selectedCategory||this.selectedCategory===e,s=""===this.searchQuery||t.toLowerCase().includes(this.searchQuery.toLowerCase());return a&&s}}))});
