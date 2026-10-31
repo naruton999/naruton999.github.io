@@ -1,0 +1,1 @@
+(()=>{document.addEventListener("alpine:init",()=>{Alpine.data("gameLab",()=>({searchQuery:"",selectedCategory:"all",isGameVisible(e,t){let a=this.selectedCategory==="all"||this.selectedCategory===e,s=this.searchQuery===""||t.toLowerCase().includes(this.searchQuery.toLowerCase());return a&&s}}))});})();
