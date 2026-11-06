@@ -1,0 +1,1 @@
+"use strict";(()=>{function s(){return{searchQuery:"",selectedCategory:"all",isGameVisible(e,t){let a=this.selectedCategory==="all"||this.selectedCategory===e,r=this.searchQuery===""||t.toLowerCase().includes(this.searchQuery.toLowerCase());return a&&r}}}document.addEventListener("alpine:init",()=>{Alpine.data("gameLab",s)});})();
